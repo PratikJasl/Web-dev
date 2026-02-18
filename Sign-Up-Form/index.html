@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learning HTML</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body> <!-- Page Level Structure -->
+        <!-- <header class="navbar-container">
+            Navbar
+        </header> -->
+
+        <main class="signup-container"> <!--Component Level Structure -->
+            <div class="form-container">
+                <header class="signup-header">    
+                    <div class="heading">
+                        <h1>SignUp</h1>
+                    </div>
+                </header>
+
+                <form class="signup-form" action="" method="POST" enctype="" autocomplete="off" target="_self">
+                    <div class="form-input">
+                        <label for="firstname" class="sr-only">FirstName: </label>
+                        <input id="firstname" name="ufirstname" required="True" type="text" placeholder="First Name">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="lastname" class="sr-only">LastName: </label>
+                        <input id="lastname" name="lastname" required="True" type="text" placeholder="Last Name">
+                    </div>
+                    
+                    <div class="form-input">
+                        <label for="user-email" class="sr-only">User email:</label>
+                        <input id="user-email" name="user-email" required="True" type="email" placeholder="Email Address">
+                    </div>
+                    
+                    <div class="form-input">
+                        <label for="password" class="sr-only">Password: </label>
+                        <input id="password" name="password" required="True" type="password" placeholder="Password">
+                    </div>
+
+                    <div class="input-checkbox">
+                        <input id="checkbox" name="checkbox" required="True" type="checkbox"> 
+                        <label for="checkbox"> Accept Terms and Condition </label>
+                    </div>
+                    
+                    <div class="SubmitButton">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <p> or </p>
+
+                <footer class="signup-footer">
+                    <div class="login-options">
+                        
+                        <button type="button"> 
+                            <i class="fa-brands fa-google" style="color: rgb(249, 249, 249);"></i>  
+                            Continue with Google
+                        </button>
+                        <button type="button">
+                            <i class="fa-brands fa-github" style="color: rgba(244, 244, 244, 1.00);"></i>
+                            Continue with Github
+                        </button>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="image-container">
+                <h2 class="image-text-1">Create your Account</h2>
+                <h4 class="image-text-2">Share your Ideas</h4>
+                <img src="./image/background.jpg">
+            </div>
+        </main>
+
+        <!-- <footer class="footer-container">
+            all rights reversed
+        </footer> -->
+    </body>
+</html>
