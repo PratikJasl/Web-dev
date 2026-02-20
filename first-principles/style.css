@@ -1,0 +1,29 @@
+:root{
+    --background-color: rgb(249, 222, 222);
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --box-shadow: 10px 10px 10px rgb(217, 214, 214);
+    --border-radius: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    padding: var(--spacing-lg);
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
