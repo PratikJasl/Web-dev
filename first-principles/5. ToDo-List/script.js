@@ -1,36 +1,43 @@
-function addItems(){
-    try {
-        let button = document.querySelector('.add-item-button');
-        button.addEventListener('click', ()=>{
+// 1. Cache the DOM elements
+const addButton = document.querySelector('.add-item-button');
+const inputContainer = document.querySelector('.input-container');
+const removeButton = document.querySelector('.remove-item-button');
+
+// 2. Add Item function
+function setupAddItems() {
+    if (!addButton || !inputContainer) return; // Guard clause
+
+    addButton.addEventListener('click', () => {
+        try {
             const newInput = document.createElement('input');
-            if (newInput) {
-                newInput.setAttribute('type', 'text');
-                newInput.setAttribute('placeholder', 'Enter Text');
-            }
-            const inputContainer = document.querySelector('.input-container')
-            if (inputContainer) {
-                inputContainer.append(newInput);
-            }
-        })
-    } catch (error) {
-        console.log("Error occured during DOM manipulation", error);
-    }
+            newInput.type = 'text';
+            newInput.placeholder = 'Enter Text';
+            newInput.name = 'user-input';
+            
+            inputContainer.append(newInput);
+        } catch (error) {
+            console.error("Error creating new input:", error);
+        }
+    });
 }
 
-addItems()
+// 3. Remove Item function
+function setupRemoveItems() {
+    if (!removeButton) return; // Guard clause
 
-function removeItems(){
-    try {
-        const button = document.querySelector('.remove-item-button');
-        button.addEventListener('click', ()=>{
+    removeButton.addEventListener('click', () => {
+        try {
             const itemToRemove = document.querySelector('input');
-            if(itemToRemove){
-                document.querySelector('.input-container').removeChild(itemToRemove);
+            
+            if (itemToRemove) {
+                itemToRemove.remove(); 
             }
-        })
-    } catch (error) {
-        console.log("Error occured during DOM manipulation", error);
-    }
+        } catch (error) {
+            console.error("Error removing input:", error);
+        }
+    });
 }
 
-removeItems()
+// 4. Initialize
+setupAddItems();
+setupRemoveItems();
