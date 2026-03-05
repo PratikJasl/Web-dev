@@ -27,9 +27,11 @@ function setupRemoveItems() {
 
     removeButton.addEventListener('click', () => {
         try {
+            //Select item to remove
             const itemToRemove = document.querySelector('input');
             
             if (itemToRemove) {
+                // Remove in one clean step without parent.
                 itemToRemove.remove(); 
             }
         } catch (error) {

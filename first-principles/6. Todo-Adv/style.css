@@ -1,0 +1,59 @@
+:root{
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --primary-color: rgba(242, 250, 249, 0.895);
+    --secondary-color: white;
+    --border-radius: 10px;
+    --box-shadow: 10px 10px 10px gray;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin: var(--spacing-lg);
+}
+
+.container{
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--secondary-color);
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.add-task-button{
+    cursor: pointer;
+}
+
+.tasks{
+    display: flex;
+    margin: var(--spacing-md);
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    list-style: -moz-repeating-linear-gradient();
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span{
+    max-width: 120px;
+}
