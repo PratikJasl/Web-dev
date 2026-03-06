@@ -1,0 +1,39 @@
+.filter-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-box {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.company-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.company-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.company-item:last-child {
+    border-bottom: none;
+}
+
+.no-results {
+    padding: 12px;
+    color: #ef4444;
+    text-align: center;
+    font-style: italic;
+}
