@@ -25,9 +25,6 @@ async function fetchUserData(){
 //fetchUserData();
 
 
-
-
-
 async function fetchMultipleUsers() {
     try {
         console.time("FetchTime"); 
