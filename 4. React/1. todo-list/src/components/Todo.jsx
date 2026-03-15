@@ -13,6 +13,8 @@ function TodoList(){
   //Task 3: When a checkbox is clicked, update the completion to True.
   //Step 1: Attach event listner on each check-box.
 
+  //Task 4:
+
   const [userInput, setUserInput] = useState('');
   const [tasks, setTask] = useState([]);
 
