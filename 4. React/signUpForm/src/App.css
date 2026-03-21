@@ -1,0 +1,42 @@
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  margin: 10rem;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  background-color: rgb(238, 247, 247);
+}
+
+.input-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 2px;
+}
+
+.form-input{
+  padding: var(--spacing-sm);
+}
+
+.form-button{
+  width: 100%;
+  padding: var(--spacing-sm);
+  background-color: rgb(51, 178, 241);
+}
+
+.input-error{
+  color:red;
+  padding: var(--spacing-sm);
+  border: 1px solid black;
+  border-radius: var(--border-radius);
+}
+
+.password-container{
+  display: flex;
+  justify-content: space-between;
+}
