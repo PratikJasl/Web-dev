@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  --spacing-md: 1rem;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.todo-container {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
