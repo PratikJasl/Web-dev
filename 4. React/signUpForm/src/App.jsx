@@ -67,6 +67,7 @@ function App() {
               required
             />
         </div>
+        
         <div className='input-container'>
             <label htmlFor='email'>Email</label>
             <input 
