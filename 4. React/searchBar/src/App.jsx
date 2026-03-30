@@ -12,7 +12,6 @@ function App() {
       setMovies([]);
       setError(null);
       setIsLoading(false);
-      
       return;
     }
 
